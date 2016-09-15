@@ -1,0 +1,51 @@
+header {
+	background:#2c3e50;
+	color:#fff;
+}
+
+article {
+	background:#FACC2E;
+	color: #003580;
+}
+
+.main {
+	background:#f2f2f2;
+}
+
+.color1 {
+	background: #34495e;
+	color:#fff;
+}
+
+aside {
+	background:#c0392b;
+	color:#fff;
+}
+
+footer {
+	background:#16a085;
+	color:#fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group-margintop {
+  margin-top: 15px;
+}
+
+.search_button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  float:right; 
+  text-align:right;
+}
+
+.container-header {
+  padding-right: 4px;
+  padding-left: 56px;  
+  padding-top: 4px;
+  padding-bottom: 4px;
+ 
+}
