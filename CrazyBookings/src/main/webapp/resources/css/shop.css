@@ -1,0 +1,266 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+h1 {
+font: bold 20px verdana, sans-serif;
+} h2 {
+font: bold 14px verdana, sans-serif;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+display: block;
+}
+
+#buttons {
+margin-left: 60px;
+}
+
+#form {
+	font: italic 12px verdana, sans-serif; 
+	text-align: left; 
+	margin-top: 10px;
+}
+
+body {
+text-align: center;
+}
+
+#agrupar {
+width:100%;
+height:100%;
+margin: 0px auto;
+text-align: center;
+}
+
+#cabecera {	
+text-align: center;
+background: #F0FFFF;
+border: 1px solid #999999;
+padding: 15px;
+height: 65px;
+}
+
+
+#cabecera li {	
+display: inline-block;
+list-style: none;
+}
+
+#company {
+	font: bold 14px verdana, sans-serif;
+	color: #00ff00;
+}
+
+#menu {
+background: #800000;
+padding: 5px 15px;
+} 
+
+#menu li {
+display: inline-block;
+list-style: none;
+padding: 5px 30px;
+font: bold 14px verdana, sans-serif;
+color: #B1251E;
+}
+
+#menu li a{
+color: #F0FFF0;
+border-right-style: solid 10px;
+}
+
+
+#seccion {
+width: 100%;
+height: 40%;
+padding: 0; 
+margin: 0;
+display: inline-block;
+list-style: none;
+} 
+
+#columna {
+float: left;
+width: 220px;
+margin: 20px 0px;
+padding: 20px;
+background: #CCCCCC;
+}
+
+#pie {
+width: 100%;
+height: 40px;
+position: relative;
+top: 570px;
+
+bottom: 0px;
+background: #e0dfda;
+}
+
+article {
+padding: 20px;
+margin-bottom: 15px;
+} 
+
+article footer {
+text-align: right;
+} 
+
+#time {
+color: #999999;
+} 
+
+figcaption {
+font: italic 14px verdana, sans-serif;
+}
+
+
+#form {
+   border: 1px solid #999999;
+   width: 100%;
+   display: inline-block;
+   width: auto;
+ }
+ 
+   
+   
+#inLine {
+	display: inline-block;
+    margin: 10px 3px;
+    text-align: center;
+}
+
+
+#cuenta {
+	font: 25px/26px Arial, sans-serif;  
+	text-align: left; 
+	border-bottom: 1px solid ;	
+}
+
+#totalpago {
+	font: 18px/17px Arial, sans-serif;  
+	text-align: left; 
+	
+}
+
+#totalizar {
+	font: 18px/17px Arial, sans-serif;  
+	margin-left: 630px;	
+	margin-top: 20px;
+}
+
+.datosPersonales {
+	font: 20px Arial, sans-serif;  
+	text-align: left; 
+	margin-top: 30px;
+	width: 30%;
+}
+
+.datosPersonales h4{
+	background: #f5f3ef;
+}
+
+.datosPersonales a {
+	font: 12px Arial, sans-serif;  
+	
+}
+
+.canjearCupones {
+	font: 20px Arial, sans-serif;  
+	text-align: CENTER; 
+	margin-top: 30px;
+	width: 30%;
+}
+
+
+.canjearCupones h4{
+	background: #f5f3ef;
+}
+
+.canjearCupones a {
+	font: 12px Arial, sans-serif;  
+	
+}
+
+#shopping-cart-empty-message {
+    background: url('../images/cart.jpg') no-repeat 0 4px;
+    height: 60px;
+}
+
+#shopping-cart-empty-message h5{
+  	margin-left: 30px;
+}
+
+#cart-empty {
+	display: inline-block;
+	text-align: left; 
+	float: left;
+	list-style: none;
+}
+
+.table-shop {
+  width: 80%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+
+.table-shop th
+{
+   background: #c0c0c0;
+   font-size: 15px;
+   color: #fff;
+}
+
+.table-shop tr
+{
+   color: #282828;
+   font-size: 20px;
+}
+
+.container-grey {
+	text-align: left;
+	width: 100%;
+    background: #f5f3f0;
+    padding: 0; 
+    margin: 0;
+}
+
+.container {
+    max-width: 940px !important;
+    min-width: 940px !important;
+}
+
+.novedades {
+	border-bottom: 1px solid #bbbbbb;
+    color: #990000;
+    font: 400 23px/28px 'Roboto Condensed', sans-serif;
+    margin: 20px 0 20px;
+    padding: 0 0 5px;
+	text-align: left;
+}
+
+.product {
+	display: inline-block;
+    padding-right: 30px;
+}
+
+.container-novedades{
+	display: inline-block;
+	width: 100%;
+}
+
+.product-feature {
+	display: inline-block;
+    font: 400 12px/17px 'Roboto Condensed', sans-serif;
+    color: #990000;
+    margin-top: 40px;
+}
+
+
+}

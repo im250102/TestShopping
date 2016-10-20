@@ -1,47 +1,38 @@
-<section class="main row">
+<div>
+	<p style="font: italic 20px verdana, sans-serif; text-align: left; color: red;"> Registro </p>
+	<p style="font: italic 12px verdana, sans-serif; text-align: left; color: red; margin-top: 10px;"> Eres nuevo en Shop Online? Registrate a continuacion. </p>
 
-		<article class="col-xs-12 col-sm-8 col-md-7">
-		
-			<form action="">
 
-				<div>
-					<h3><span class="glyphicon glyphicon-search">Las mejores ofertas en hoteles</span></h3>
+		<div style="font: italic 12px verdana, sans-serif; text-align: left; margin-top: 10px;" >
+			Mi nombre es:  <input id="name" type="text" ng-model="user.name"  required min="1" /> <br><br>   
+			Mi email es:   <input id="email" style="margin-left: 13px;" type="text"  ng-model="user.email"  required min="1" /> <br><br>
+    
+    		<div id="buttons">
+				<button  class="btn btn-primary"  ng-disabled="!user.name" ng-click="addUser(user)">Registrar</button>
+				<button  class="btn btn-primary"  ng-click="">Show Users</button>
+			</div>
 
-				</div>
+		</div>
 
-				<div class="form-group form-group-margintop">
-					<label for="nombre">Destino, nombre del alojamiento o dirección:</label>		
-					<input id="nombre" class="form-control" placeholder="Destino" type="text">
-				</div>
-		
-				<div class="form-group form-group-margintop">
-					<label for="option">Elige una option:</label>
-					<select name="" id="option" class="form-control">
-						<option value="">Option 1</option>
-						<option value="">Option 2</option>
-						<option value="">Option 3</option>
-						<option value="">Option 4</option>
-						<option value="">Option 5</option>		
-					</select>
-				</div>
+		<h3 style="margin-left:100px;">List of users: </h3>
 
-				<div class="form-group form-group-margintop">
-					<label for="mensaje">Mensaje:</label>
-					<textarea name=""  class="form-control" id="mensaje" placeholder="Escribe aqui tu mensaje:"></textarea>
-				</div>
-				
-				<div class="search_button">
-					<button class="btn btn-primary">Buscar</button>
-				</div>
+		<div class="alert alert-info" ng-show="users.length == 0">
+		    No Users found
+		</div>
 
-			</form>	
-
-		</article>
-
-		<aside class="col-xs-12 col-sm-4 col-md-5">
-			<h3>Aside</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, officia dignissimos assumenda dicta dolores perspiciatis fugit, excepturi, quaerat voluptatem distinctio ab aliquid maiores sed itaque doloremque repudiandae fugiat nemo neque!
-			</p>
-		</aside>
-	</section>
+		<table class="table table-bordered table-striped" ng-show="users.length > 0">
+		    <thead>
+		        <tr>
+		            <th style="text-align: center;">Name</th>
+		            <th style="text-align: center;">email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr ng-repeat="user in users | orderBy:predicate">
+		            <td>{{user.name}}</td>
+		            <td>{{user.email}}</td>
+		            <td style="text-align: center;width: 20px;"></td>
+		        </tr>
+		    </tbody>
+		</table>
+</div>
