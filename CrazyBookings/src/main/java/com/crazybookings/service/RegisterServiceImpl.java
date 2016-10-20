@@ -9,7 +9,6 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.crazybookings.beans.User;
 import com.crazybookings.persistence.Usr;
 
 @Service("registerService")
@@ -18,25 +17,21 @@ public class RegisterServiceImpl implements RegisterService{
     @PersistenceContext
     private EntityManager entityManager;
 	
-    private static List<User> userList = new ArrayList<User>();
+    private static List<Usr> userList = new ArrayList<Usr>();
 
     @Transactional
-    public void addUser(User user) {
-        Usr userpersist = new Usr();
-        userpersist.setName(user.getName());        
+    public void addUser(Usr usr) {
         try{
-        	entityManager.persist(userpersist);
+        	entityManager.persist(usr);
         }catch(Exception e){
         	System.out.println("error " + e);
         }
     }
     
     @SuppressWarnings("unchecked")
-	public List<User> getAllUsers() {
+	public List<Usr> getAllUsers() {
     	userList = entityManager.createQuery("select u from Usr u").getResultList();
     	return userList;
     }
-    
-
 
 }

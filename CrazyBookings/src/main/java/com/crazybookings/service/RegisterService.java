@@ -2,12 +2,12 @@ package com.crazybookings.service;
 
 import java.util.List;
 
-import com.crazybookings.beans.User;
+import com.crazybookings.persistence.Usr;
 
 public interface RegisterService {
 
-    public void addUser(User user);
+    public void addUser(Usr user);
     
-    public List<User> getAllUsers();
+    public List<Usr> getAllUsers();
     
 }
