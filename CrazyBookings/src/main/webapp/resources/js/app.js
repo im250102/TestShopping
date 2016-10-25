@@ -15,6 +15,11 @@ CrazyBookingsApp.config(function($routeProvider) {
             controller: RegisterController
         })
         
+        .when('/products', {
+            templateUrl : 'products/layout',
+            controller: ProductController
+        })
+        
         .otherwise({
             redirectTo: '/index'
         });

@@ -1,0 +1,39 @@
+<div class="container-grey">
+
+	<div class="container">
+		<div class="novedades">
+			Novedades<img src="https://www.vinissimus.com/images/icon-new-hp.png" alt="">
+		</div>
+	    
+	    <div class="container-novedades">
+		    <div ng-repeat="product in products" class="product">
+				  <img ng-src="data:image/JPEG;base64,{{product.src}}">
+				  
+				  <div class="product-feature" ><h4>{{product.name}}</h4>
+				  
+				  <h5>Precio: {{product.price}} euros</h5>
+ 				  	  
+					  <label for="singleSelect"> Numero de botellas: </label>
+					  <select name="singleSelect" ng-model="data.singleSelect">
+					      <option value="">---Please select---</option> 
+					      <option value="1">1</option>
+					      <option value="2">2</option>
+					      <option value="3">3</option>
+					      <option value="4">4</option>
+					      <option value="5">5</option>
+					 	  <option value="10">10</option>
+					 	  <option value="25">25</option>
+					 	  <option value="50">50</option>
+					  </select><br>
+					  <button type="button" class="btn btn-xlarge btn-primary" ng-click="addProductToCart(product)">Comprar</button>
+				  </div>
+		    </div>
+		    
+	    </div>
+
+	</div>
+
+</div>
+
+
+

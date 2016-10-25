@@ -21,6 +21,7 @@ var RegisterController =  function($scope, $http) {
 				"email" : email
 		};	
        
+    	
     	$http.post('main/addUser', user).success(function() {
        		alert('product add into cart');	
         });  
