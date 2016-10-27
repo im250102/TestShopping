@@ -11,7 +11,7 @@ CrazyBookingsApp.config(function($routeProvider) {
 
     $routeProvider
         .when('/index', {
-            templateUrl : 'main/layout',
+            templateUrl : 'register/layout',
             controller: RegisterController
         })
         

@@ -22,7 +22,7 @@ var RegisterController =  function($scope, $http) {
 		};	
        
     	
-    	$http.post('main/addUser', user).success(function() {
+    	$http.post('register/addUser', user).success(function() {
             $scope.fetchUsersList();
     		alert('user register succesfully');	
         });  
@@ -30,13 +30,13 @@ var RegisterController =  function($scope, $http) {
     };
        
     $scope.fetchUsersList = function() {
-        $http.get('main/userlist.json').success(function(userList){
+        $http.get('register/userlist.json').success(function(userList){
             $scope.users = userList;
         });
     };
     
     $scope.deleteUser = function(name){
-        $http.delete('main/delete/' + name).success(function() {
+        $http.delete('register/delete/' + name).success(function() {
         	$scope.fetchUsersList();
         });
     };

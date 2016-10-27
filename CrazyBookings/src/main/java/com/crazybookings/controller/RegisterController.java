@@ -13,15 +13,15 @@ import com.crazybookings.persistence.Usr;
 import com.crazybookings.service.RegisterService;
 
 @Controller
-@RequestMapping("/main")
-public class MainController {
+@RequestMapping("/register")
+public class RegisterController {
 
 	@Autowired
     private RegisterService registerService;
 		
     @RequestMapping("/layout")
     public String getMainPartialPage() {
-        return "main/layout";
+        return "register/layout";
     }
     
     
