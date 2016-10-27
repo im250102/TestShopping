@@ -26,8 +26,7 @@ public class ProductServiceImpl implements ProductService {
     }
     
     @Cacheable("products")
-    @SuppressWarnings("unchecked")
-	public Collection<ProductPersist> getAllProducts() {
+    public Collection<ProductPersist> getAllProducts() {
     	return productDAO.getAllProducts();
     }
 
