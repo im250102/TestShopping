@@ -11,13 +11,13 @@ CrazyBookingsApp.config(function($routeProvider) {
 
     $routeProvider
         .when('/index', {
-            templateUrl : 'register/layout',
-            controller: RegisterController
+        	templateUrl : 'products/layout',
+            controller: ProductController
         })
         
-        .when('/products', {
-            templateUrl : 'products/layout',
-            controller: ProductController
+        .when('/register', {
+        	templateUrl : 'register/layout',
+        	controller: RegisterController
         })
         
         .otherwise({

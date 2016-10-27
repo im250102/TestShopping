@@ -5,7 +5,6 @@ var ProductController = function($scope, $http) {
     
     $scope.products = [];
     
-    //Recupera todos los productos almacenados en la lista de productos
     $scope.getAllProducts = function(){    	
 	   	 $http({
 	            url: 'products/getAllProducts/',
@@ -24,11 +23,9 @@ var ProductController = function($scope, $http) {
     $scope.getAllProducts();
 
     
-    //Initializa product and data
     $scope.product = {};
     $scope.data = {};
     
-    //Add product into cart
     $scope.addProductToCart = function(product) {
     	
     	var nombre = product.name;
@@ -45,8 +42,6 @@ var ProductController = function($scope, $http) {
        	$http.post("cart/addProduct", product).success(function(){
        		alert('product add into cart');	
         });  
-       	
-
 
     };
     
