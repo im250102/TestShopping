@@ -2,7 +2,6 @@
 	<p style="font: italic 20px verdana, sans-serif; text-align: left; color: red;"> Registro </p>
 	<p style="font: italic 12px verdana, sans-serif; text-align: left; color: red; margin-top: 10px;"> Eres nuevo en Shop Online? Registrate a continuacion. </p>
 
-
 		<div style="font: italic 12px verdana, sans-serif; text-align: left; margin-top: 10px;" >
 			Mi nombre es:  <input id="name" type="text" ng-model="user.name"  required min="1" /> <br><br>   
 			Mi email es:   <input id="email" style="margin-left: 13px;" type="text"  ng-model="user.email"  required min="1" /> <br><br>
@@ -24,13 +23,14 @@
 		    <thead>
 		        <tr>
 		            <th style="text-align: center;">Name</th>
-		            <th style="text-align: center;">email</th>
+		            <th style="text-align: center;">Email</th>
 		        </tr>
 		    </thead>
 		    <tbody>
 		        <tr ng-repeat="user in users | orderBy:predicate">
 		            <td>{{user.name}}</td>
 		            <td>{{user.email}}</td>
+		            <td><button ng-click="deleteUser()" class="glyphicon glyphicon-remove"></button></td>
 		            <td style="text-align: center;width: 20px;"></td>
 		        </tr>
 		    </tbody>

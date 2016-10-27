@@ -23,9 +23,10 @@ var RegisterController =  function($scope, $http) {
        
     	
     	$http.post('main/addUser', user).success(function() {
-       		alert('product add into cart');	
+            $scope.fetchUsersList();
+    		alert('user register succesfully');	
         });  
-
+        
     };
        
     $scope.fetchUsersList = function() {
@@ -34,8 +35,14 @@ var RegisterController =  function($scope, $http) {
         });
     };
     
+    $scope.deleteUser = function(name){
+        $http.delete('main/delete/' + name).success(function() {
+        	$scope.fetchUsersList();
+        });
+    };
+    
     $scope.fetchUsersList();
 
     $scope.predicate = 'name';
-
+    
 };
