@@ -1,12 +1,28 @@
-<div>
+<div>	
 	<div id="cuenta"><p> Add Product </p></div>
 		
-	<div style="font: italic 12px verdana, sans-serif; text-align: left; margin-top: 30px;" >
-			Producto:  <input type="text" ng-model="product"  required min="1" /> <br><br>  
-			Precio:  <input type="text" ng-model="price"  required min="1" /> <br><br>   
-			<input type="file" file-model="myFile"/>
-			<button ng-click="uploadFile()">Add Product</button>
+	<div style="font: italic 12px verdana, sans-serif; text-align: left; margin-top: 10px;" >
+		
+			<div class="form-group form-group-margintop">
+				
+				<!-- Producto -->
+				<label for="product">Producto:</label>		
+				<input type="text" id="product" ng-model="product" placeholder="producto" required min="1" ><br><br>   
+			
+				<!-- Precio -->
+				<label for="price">Precio:</label>		
+				<input type="text" id="price" ng-model="price" placeholder="precio" required min="1" style="margin-left: 17px;"/><br><br> 
+
+				<!-- Examinar / Add imagen -->
+				<input type="file"  class="file" file-model="myFile"/><br><br> 
+
+				<button class="btn btn-primary" ng-click="uploadFile()" ng-disabled="!product">Add Product</button>
+		
+			</div>
+			
+	
+						
 	</div>
 
-</div>	
-	
+</div>
+
