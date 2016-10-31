@@ -6,10 +6,10 @@ import com.crazybookings.persistence.Usr;
 
 public interface RegisterDAO {
 
-
-
-		  public void addUser(Usr usr);
-		  
-		  public List<Usr> getAllUsers();
+	  public void addUser(Usr usr);
+  
+	  public List<Usr> getAllUsers();
+	  
+	  public void deleteUser(String name);
 
 }

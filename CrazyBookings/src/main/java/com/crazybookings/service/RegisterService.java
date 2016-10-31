@@ -10,4 +10,6 @@ public interface RegisterService {
     
     public List<Usr> getAllUsers();
     
+    public void deleteUser(String name);
+    
 }

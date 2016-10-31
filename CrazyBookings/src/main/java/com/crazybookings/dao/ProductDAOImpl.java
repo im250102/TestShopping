@@ -7,7 +7,9 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.crazybookings.beans.Product;
 import com.crazybookings.persistence.ProductPersist;
 
 @Component
@@ -16,14 +18,14 @@ public class ProductDAOImpl implements ProductDAO{
     @PersistenceContext
     private EntityManager entityManager;
     
-//    @Transactional
-//    public void addProduct(Product product) {
-//    	ProductPersist productPersist = new ProductPersist();
-//    	productPersist.setName(product.getName());
-//    	productPersist.setPrice(product.getPrice());
-//    	productPersist.setImage(product.getImage());
-//    	entityManager.persist(productPersist);
-//    }
+    @Transactional
+    public void addProduct(Product product) {
+    	ProductPersist productPersist = new ProductPersist();
+    	productPersist.setName(product.getName());
+    	productPersist.setPrice(product.getPrice());
+    	productPersist.setImage(product.getImage());
+    	entityManager.persist(productPersist);
+    }
     
     public ProductPersist getProduct(){
     	ProductPersist product = entityManager.find(ProductPersist.class, new Long(11));

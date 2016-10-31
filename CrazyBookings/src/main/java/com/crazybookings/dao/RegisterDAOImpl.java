@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,8 +31,15 @@ public class RegisterDAOImpl implements RegisterDAO {
   
   @SuppressWarnings("unchecked")
   public List<Usr> getAllUsers() {
-  	userList = entityManager.createQuery("select u from Usr u").getResultList();
-  	return userList;
+	  userList = entityManager.createQuery("select u from Usr u").getResultList();
+	  return userList;
+  }
+
+  @Transactional
+  public void deleteUser(String name) {
+      Query query = entityManager.createQuery("DELETE FROM Usr U WHERE U.name = :p");
+      query.setParameter("p", name);
+      int deleted = query.executeUpdate();
   }
 
 }

@@ -30,7 +30,7 @@
 		        <tr ng-repeat="user in users | orderBy:predicate">
 		            <td>{{user.name}}</td>
 		            <td>{{user.email}}</td>
-		            <td><button ng-click="deleteUser()" class="glyphicon glyphicon-remove"></button></td>
+		            <td><button ng-click="deleteUser(user.name)" class="glyphicon glyphicon-remove"></button></td>
 		            <td style="text-align: center;width: 20px;"></td>
 		        </tr>
 		    </tbody>

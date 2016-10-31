@@ -21,5 +21,9 @@ public class RegisterServiceImpl implements RegisterService{
 	public void addUser(Usr usr) {
 		registerDAO.addUser(usr);
 	}
+	
+	public void deleteUser(String name){
+		registerDAO.deleteUser(name);
+	}
 
 }
