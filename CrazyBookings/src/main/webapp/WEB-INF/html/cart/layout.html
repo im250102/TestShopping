@@ -1,0 +1,41 @@
+<div>
+	
+	<div id="cuenta"><p> Mi carrito </p></div>
+	
+	<div id="cart-empty" ng-show="orders.length == 0">
+		<ui>
+			<li><img src="resources/images/cart.jpg"></li>
+			<li><h5>Usted no tiene productos en el carrito</h5></li>
+	    </ui>
+    </div>	 	
+	
+	<div><table class="table-shop" ng-show="orders.length > 0">
+	    <thead>
+	        <tr>
+	        	<th>Id</th>
+	            <th>Producto</th>
+	            <th>Cantidad</th>
+	            <th>Precio</th>
+	            <th>Total</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr ng-repeat="order in orders">
+	            <td>{{order.id}}</td>
+	            <td>{{order.name}}</td>
+	            <td>{{order.quantity}}</td>
+	            <td>{{order.price}}</td>
+	            <td>{{order.quantity * order.price}}</td>
+	            <td><button class="btn btn-primary" ng-click="deleteOrder(order.id)">X</button></td>
+	        </tr>
+	    </tbody>
+	</table></div>
+	
+	<div id="totalizar" ng-show="orders.length > 0">
+		 <button class="btn btn-primary" ng-click="totalizar()">Total</button> 
+		 <input id="name" type="text" ng-model="total"/> <br><br>   
+	</div>
+	
+</div>	
+		
+		

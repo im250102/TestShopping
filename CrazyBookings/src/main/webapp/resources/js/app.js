@@ -24,6 +24,11 @@ CrazyBookingsApp.config(function($routeProvider) {
         	templateUrl : 'admin/layout',
             controller: AdminController
         })
+        
+        .when('/cart', {
+        	templateUrl : 'cart/layout',
+            controller: CartController
+        })
        
         .otherwise({
             redirectTo: '/index'

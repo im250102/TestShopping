@@ -21,11 +21,11 @@ var ProductController = function($scope, $http) {
     }
     
     $scope.getAllProducts();
-
     
     $scope.product = {};
     $scope.data = {};
     
+    //Add product into Cart
     $scope.addProductToCart = function(product) {
     	
     	var nombre = product.name;
@@ -39,7 +39,7 @@ var ProductController = function($scope, $http) {
 		};	
 
        
-       	$http.post("cart/addProduct", product).success(function(){
+       	$http.post("products/addProductToCart", product).success(function(){
        		alert('product add into cart');	
         });  
 

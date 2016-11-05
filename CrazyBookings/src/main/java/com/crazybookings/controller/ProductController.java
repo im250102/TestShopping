@@ -1,13 +1,19 @@
 package com.crazybookings.controller;
 
 import java.util.Collection;
+import java.util.HashMap;
+
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.crazybookings.beans.Order;
+import com.crazybookings.beans.Product;
 import com.crazybookings.beans.Products;
 import com.crazybookings.persistence.ProductPersist;
 import com.crazybookings.service.ProductService;
@@ -34,4 +40,16 @@ public class ProductController {
 			return products.prepareProductList(list).toString();
 		return null;
 	}
+	
+    /*Add product into cart, data in session*/
+	@RequestMapping(value = "/addProductToCart", method = RequestMethod.POST)
+    public @ResponseBody void addProductToCart( @RequestBody  Product product, HttpSession httpSession) {
+		
+		//Add product to the Orders map
+		HashMap<String, Order> ordersMap = productService.addProductToCart(product);
+		
+		//Add orders map into session
+		httpSession.setAttribute("orders", ordersMap);
+		
+    }
 }
