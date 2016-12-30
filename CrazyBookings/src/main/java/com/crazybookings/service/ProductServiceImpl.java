@@ -1,6 +1,5 @@
 package com.crazybookings.service;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -44,6 +43,10 @@ public class ProductServiceImpl implements ProductService {
 			ordersMap.put(order.getName(), order);
 		
 		return ordersMap;
+	}
+
+	public Collection<ProductPersist> getProductsByName(String name) {
+		return productDAO.getProducsByName(name);
 	}
 
 }

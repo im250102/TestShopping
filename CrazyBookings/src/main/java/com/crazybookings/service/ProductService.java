@@ -15,6 +15,8 @@ public interface ProductService {
 	 
 	 public Collection<ProductPersist> getAllProducts();
 	 
+	 public Collection<ProductPersist> getProductsByName(String name);
+	 
   	 public HashMap<String, Order> addProductToCart (Product product);
 
 }

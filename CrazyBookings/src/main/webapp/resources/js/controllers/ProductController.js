@@ -45,4 +45,23 @@ var ProductController = function($scope, $http) {
 
     };
     
+    //Search wine
+    $scope.searchWine = function(searchWine) {
+
+    	$scope.products = [];
+        $http({
+            url: 'products/getProductByName/' + searchWine,
+            method: "POST",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).success(function (data, status, headers, config) {
+		   	var i=0;
+	        for(i=0; i< data.productList.length; i++){
+	        	  $scope.products.push(data.productList[i]);
+	        }
+        }).error(function (data, status, headers, config) {
+            alert('fail retrieving products');	            
+        });     
+       	
+    };
+    
 };

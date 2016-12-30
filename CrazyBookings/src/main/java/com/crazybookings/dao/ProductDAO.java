@@ -13,4 +13,7 @@ public interface ProductDAO {
 	 
 	 public Collection<ProductPersist> getAllProducts();
 	 
+	 public Collection<ProductPersist> getProducsByName(String name);
+
+	 
 }

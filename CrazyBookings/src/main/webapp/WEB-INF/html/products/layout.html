@@ -1,11 +1,18 @@
-<div class="container-grey">
 
-	<div class="container">
-		<div class="novedades">
-			Novedades<img src="https://www.vinissimus.com/images/icon-new-hp.png" alt="">
+<div>
+		
+		<!--  -->
+		<div id="cuenta">
+			<p> Novedades<img src="https://www.vinissimus.com/images/icon-new-hp.png" alt=""> </p>
 		</div>
 	    
 	    <div class="container-novedades">
+
+	        <li class="input-append">
+    			  <input  id="search" class="span2" type="text" ng-model="searchCriteria" required min="1" />
+    			  <button class="btn btn-primary" ng-click="searchWine(searchCriteria)">Buscar</button>
+			</li>		   
+		    
 		    <div ng-repeat="product in products" class="product">
 				  <img ng-src="data:image/JPEG;base64,{{product.src}}">
 				  
@@ -31,9 +38,9 @@
 		    
 	    </div>
 
-	</div>
-
 </div>
+
+
 
 
 

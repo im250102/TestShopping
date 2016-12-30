@@ -38,4 +38,11 @@ public class ProductDAOImpl implements ProductDAO{
         Collection<ProductPersist> products = query.getResultList();
         return products;
     }
+
+	public Collection<ProductPersist> getProducsByName(String name) {
+		Query query = entityManager.createQuery("SELECT e FROM ProductPersist e where e.name=:arg1");
+		query.setParameter("arg1", name);
+        Collection<ProductPersist> products = query.getResultList();
+        return products;
+	}
 }

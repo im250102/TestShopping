@@ -19,7 +19,7 @@ margin-left: 60px;
 }
 
 #form {
-	font: italic 12px verdana, sans-serif; 
+	font: italic 16px verdana, sans-serif; 
 	text-align: left; 
 	margin-top: 10px;
 }
@@ -36,7 +36,7 @@ text-align: center;
 }
 
 #cabecera {	
-text-align: center;
+text-align: left;
 background: #F0FFFF;
 border: 1px solid #999999;
 padding: 15px;
@@ -47,6 +47,7 @@ height: 65px;
 #cabecera li {	
 display: inline-block;
 list-style: none;
+padding: 0px 10px 0px 0px;
 }
 
 #company {
@@ -56,14 +57,12 @@ list-style: none;
 
 #menu {
 background: #800000;
-padding: 5px 15px;
+padding: 5px 0px;
 } 
 
 #menu li {
-display: inline-block;
 list-style: none;
-padding: 5px 30px;
-font: bold 14px verdana, sans-serif;
+font: bold 16px verdana, sans-serif;
 color: #B1251E;
 }
 
@@ -226,7 +225,6 @@ font: italic 14px verdana, sans-serif;
 .container-grey {
 	text-align: left;
 	width: 100%;
-    background: #f5f3f0;
     padding: 0; 
     margin: 0;
 }
@@ -251,7 +249,6 @@ font: italic 14px verdana, sans-serif;
 }
 
 .container-novedades{
-	display: inline-block;
 	width: 100%;
 }
 
