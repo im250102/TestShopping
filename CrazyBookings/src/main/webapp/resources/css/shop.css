@@ -229,9 +229,12 @@ font: italic 14px verdana, sans-serif;
     margin: 0;
 }
 
-.container {
-    max-width: 940px !important;
-    min-width: 940px !important;
+.container-search {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
 }
 
 .novedades {
@@ -245,11 +248,13 @@ font: italic 14px verdana, sans-serif;
 
 .product {
 	display: inline-block;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .container-novedades{
 	width: 100%;
+	margin-top: 40px;
+
 }
 
 .product-feature {
@@ -257,6 +262,7 @@ font: italic 14px verdana, sans-serif;
     font: 400 12px/17px 'Roboto Condensed', sans-serif;
     color: #990000;
     margin-top: 40px;
+    padding-right: 35px;
 }
 
 

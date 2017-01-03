@@ -1,25 +1,41 @@
 
-<div>
-		
-		<!--  -->
-		<div id="cuenta">
-			<p> Novedades<img src="https://www.vinissimus.com/images/icon-new-hp.png" alt=""> </p>
-		</div>
-	    
-	    <div class="container-novedades">
+	<!-- Cabecera -->
+	<div id="cuenta">
+		<p> Novedades<img src="https://www.vinissimus.com/images/icon-new-hp.png" alt=""> </p>
+	</div>
+   
+   <div class="container-novedades">
 
-	        <li class="input-append">
-    			  <input  id="search" class="span2" type="text" ng-model="searchCriteria" required min="1" />
-    			  <button class="btn btn-primary" ng-click="searchWine(searchCriteria)">Buscar</button>
-			</li>		   
-		    
+	<div class="container-search">
+		<div class="row">
+	        <div class="col-xs-4 col-sm-4 col-md-4">
+	    		<h2>Busque su vino</h2>
+	            <div id="custom-search-input">
+	                <div class="input-group col-md-12">
+	    
+	                    <input id="search" type="text" class="form-control input-lg" ng-model="searchCriteria"  placeholder="Buscar en Vinos del Norte" />
+	                    <span class="input-group-btn">
+	                        <button ng-click="searchWine(searchCriteria)" class="btn btn-info btn-lg" type="button">
+	                            <i class="glyphicon glyphicon-search"></i>
+	                        </button>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</div>
+      
+    <div class="row">
+    	
+    	<div class="col-xs-4 col-sm-6 col-md-12">
+    
 		    <div ng-repeat="product in products" class="product">
 				  <img ng-src="data:image/JPEG;base64,{{product.src}}">
 				  
 				  <div class="product-feature" ><h4>{{product.name}}</h4>
 				  
 				  <h5>Precio: {{product.price}} euros</h5>
- 				  	  
+					  	  
 					  <label for="singleSelect"> Numero de botellas: </label>
 					  <select name="singleSelect" ng-model="data.singleSelect">
 					      <option value="">---Please select---</option> 
@@ -34,11 +50,13 @@
 					  </select><br>
 					  <button type="button" class="btn btn-xlarge btn-primary" ng-click="addProductToCart(product)">Comprar</button>
 				  </div>
-		    </div>
-		    
-	    </div>
+	    	</div>
+    	
+ 	  </div>
+  </div>
 
 </div>
+
 
 
 
