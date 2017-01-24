@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="resources/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css" media="screen" />
 </head>
-<body>
 
+	<body>
 		<!-- Header  -->
 		<header id="cabecera">
 			<div class="row">
@@ -61,17 +61,20 @@
 				        <li><a href="#/register">Registro de usuarios</a></li>
 				        <li><a href="#/wine">Gestion Cuenta</a></li>
 				        <li><a href="#/admin">Admin products</a></li>
-			      	</ul>
+				        <li><a href="#/contact">Contacto</a></li>
+				  	</ul>
 			    </div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 		
+		<!-- Seccion: Aqui cargamos las diferentes paginas bajo demanda del usuario  -->
 		<section id="seccion">
 			<article>
 				<div ng-view></div>
 			</article>
 		</section>
 	
+		<!-- Footer  -->
 		<footer id="pie">
 			Derechos Reservados &copy; 2015-2016
 		</footer>
@@ -85,7 +88,6 @@
 		<script src="resources/js/controllers/AdminController.js"></script>
 		<script src="resources/js/controllers/ProductController.js"></script>
 		<script src="resources/js/controllers/RegisterController.js"></script>
-		<script src="resources/js/filters.js"></script>
 		<script src="resources/js/directives.js"></script>
 	
 	</body>
