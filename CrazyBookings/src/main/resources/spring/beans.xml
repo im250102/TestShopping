@@ -8,57 +8,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.2.xsd" 
        xmlns:cache="http://www.springframework.org/schema/cache">
-
  
-	<context:component-scan base-package="com.crazybookings" />
-    
-    <mvc:annotation-driven />
-    
-    <mvc:resources mapping="/resources/**" location="/resources/" />
-	
-	<!-- View configuration - Velocity -->
-	<bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
-        <property name="resourceLoaderPath" value="/WEB-INF/html/"/>
-    </bean>
-
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
-        <property name="cache" value="true"/>
-        <property name="prefix" value=""/>
-        <property name="suffix" value=".html"/>
-        <property name="exposeSpringMacroHelpers" value="true"/>
-    </bean>
-    
-    <bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
-    
-    <!-- JNDI base de datos -->
-    
-    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-        <property name="dataSource" ref="shop4u"/>
-    </bean>
-
-	<jee:jndi-lookup id="shop4u" jndi-name="java:/comp/env/jdbc/shop4u" expected-type="javax.sql.DataSource"/>
-
-	<!-- JPA Transaction Manager -->
-    
-    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory" />
-    </bean>
-    
-    <tx:annotation-driven/>
-    
-    <!-- Cache -->
-    <cache:annotation-driven />
-    
-  	<bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
-	    <property name="caches">
-	      <set>
-	        <bean class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" name="products" />
-	      </set>
-	    </property>
-  	</bean>
-  	
-  	 <!-- SET default mail properties -->
+	<context:component-scan base-package="com.crazybookings.mail.service" />
+     
+	 <!-- SET default mail properties -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
         <property name="host" value="smtp.gmail.com"/>
         <property name="port" value="465"/>
@@ -74,5 +27,5 @@
             </props>
         </property>
     </bean>
-    
+ 
 </beans>

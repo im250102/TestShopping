@@ -31,7 +31,8 @@ CrazyBookingsApp.config(function($routeProvider) {
         })
         
         .when('/contact', {        	
-        	templateUrl : 'contact/layout'
+        	templateUrl : 'contact/layout',
+        	controller: ContactController
         })
        
         .otherwise({
