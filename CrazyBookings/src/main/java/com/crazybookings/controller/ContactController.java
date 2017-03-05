@@ -1,5 +1,6 @@
 package com.crazybookings.controller;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,12 +15,16 @@ import com.crazybookings.mail.service.MailService;
 @Controller
 @RequestMapping("/contact")
 public class ContactController {
- 
+    
+	private Logger logger = Logger.getLogger(ContactController.class);
+	
 	@Autowired
     private MailService mailService;
 	
     @RequestMapping("/layout")
     public String getMainPartialPage() {
+        logger.info("This is an info log entry");
+        logger.error("This is an error log entry");
         return "contact/layout";
     }
     
@@ -29,3 +34,4 @@ public class ContactController {
     }
     
 }
+
