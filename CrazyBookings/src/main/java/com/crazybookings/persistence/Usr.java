@@ -17,8 +17,9 @@ public class Usr {
     // the optional @Column allows us makes sure that the name is limited to a suitable size and is unique
     private String name;
 
-    // note that no setter for ID is provided, Hibernate will generate the ID for us
-
+    private String email;
+   
+    
     public long getId() {
         return id;
     }
@@ -31,8 +32,6 @@ public class Usr {
         return name;
     }
     
-    private String email;
-
 	public String getEmail() {
 		return email;
 	}
@@ -41,6 +40,4 @@ public class Usr {
 		this.email = email;
 	} 
     
-
-
 }

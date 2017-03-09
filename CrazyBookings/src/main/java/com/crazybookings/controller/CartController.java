@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +25,10 @@ public class CartController {
     
 	@RequestMapping("/layout")
     public String getMainPartialPage() {
-        return "cart/layout";
+    	
+		Logger.getLogger(getClass()).info("<CrazyBookings>Inside of Cart Controller<CrazyBookings>");
+        
+		return "cart/layout";
     }
 	
 	/*Retrieve list of orders to be shown in cart */
@@ -38,20 +42,19 @@ public class CartController {
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public @ResponseBody void deleteOrderFromCart(@PathVariable("id") Long id, HttpSession httpSession) {
     	
-    	//Recuperar Map de session
+		Logger.getLogger(getClass()).info("<CrazyBookings>Removing order from cart<CrazyBookings>");
+    	
+    	//Retrieve Map from session
 		HashMap<String, Order> ordersMap = (HashMap<String, Order>) httpSession.getAttribute("orders"); 
 
-    	//De esa map, eliminar esa ordern
+    	//Remove order from Cart
 		cartService.deleteOrderFromCart(id, ordersMap);
     	
-		httpSession.setAttribute("orders", ordersMap);
+		Logger.getLogger(getClass()).info("<CrazyBookings>Removed order from cart<CrazyBookings>");
 		
-		//Set en session de nuevo
+		httpSession.setAttribute("orders", ordersMap);		
 		
-//    	HashMap<String, Order> ordersMap = cartService.deleteOrderFromCart(id);
-//		httpSession.setAttribute("orders", ordersMap);
 
-    	//return cartService.deleteOrderFromCart(id);
     }
 
 }

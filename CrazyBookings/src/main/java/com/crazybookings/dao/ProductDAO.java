@@ -9,8 +9,6 @@ public interface ProductDAO {
 	
 	 public void addProduct(Product product);
 	 
-	 public ProductPersist getProduct();
-	 
 	 public Collection<ProductPersist> getAllProducts();
 	 
 	 public Collection<ProductPersist> getProducsByName(String name);

@@ -18,8 +18,14 @@ public class ProductPersist {
     // the optional @Column allows us makes sure that the name is limited to a suitable size and is unique
     private String name;
 
-    // note that no setter for ID is provided, Hibernate will generate the ID for us
-
+    @Column(length = 4)
+    // the optional @Column allows us makes sure that the name is limited to a suitable size and is unique
+	private int price;
+    
+    @Lob
+    @Column(name = "image", nullable = true)
+    private byte[] image;
+    
     public long getId() {
         return idProduct;
     }
@@ -32,10 +38,6 @@ public class ProductPersist {
         return name;
     }
     
-    @Lob
-    @Column(name = "image", nullable = true)
-    private byte[] image;
-
 	public byte[] getImage() {
 		return image;
 	}
@@ -43,15 +45,7 @@ public class ProductPersist {
 	public void setImage(byte[] image) {
 		this.image = image;
 	} 
-	
-	public ProductPersist(){}
-	
-	public ProductPersist(String name, int price, byte[] image){
-		this.name = name;
-		this.price = price;
-		this.image = image;
-	}
-	
+		
 	public int getPrice() {
 		return price;
 	}
@@ -59,9 +53,5 @@ public class ProductPersist {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
-    @Column(length = 4)
-    // the optional @Column allows us makes sure that the name is limited to a suitable size and is unique
-	private int price;
 
 }

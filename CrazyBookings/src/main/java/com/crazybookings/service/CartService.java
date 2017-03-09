@@ -1,15 +1,14 @@
 package com.crazybookings.service;
 
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.crazybookings.beans.Order;
 
-public interface CartService {
+public interface CartService {	
 	
+	public List<Order> getOrderList(Map<String, Order> ordersMap);
 	
-	public List<Order> getOrderList(HashMap<String, Order> ordersMap);
-	
-	public HashMap<String, Order>  deleteOrderFromCart (Long id, HashMap<String, Order> ordersMap);
+	public Map<String, Order>  deleteOrderFromCart (Long id, Map<String, Order> ordersMap);
 
 }

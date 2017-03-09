@@ -14,6 +14,7 @@ public class Products {
 	private List<Product> productList = null;
 	
 	public Products(){} //Spring needs this constructor
+	
 	public Products(List<Product> productList) {
 	       this.productList = productList;
 	}

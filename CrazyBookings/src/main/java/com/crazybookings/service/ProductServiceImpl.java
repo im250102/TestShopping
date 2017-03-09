@@ -2,6 +2,7 @@ package com.crazybookings.service;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -20,14 +21,10 @@ public class ProductServiceImpl implements ProductService {
     private ProductDAO productDAO;
     
 	private HashMap<String, Order> ordersMap = new HashMap<String, Order>();
-	private static Long id = 0L;
+	private Long id = 0L;
 	
     public void addProduct(Product product) {
     	productDAO.addProduct(product);
-    }
-    
-    public ProductPersist getProduct(){
-    	return productDAO.getProduct();
     }
     
     @Cacheable("products")
@@ -35,7 +32,7 @@ public class ProductServiceImpl implements ProductService {
     	return productDAO.getAllProducts();
     }
     
-	public HashMap<String, Order> addProductToCart(Product product) {
+	public Map<String, Order> addProductToCart(Product product) {
 		Order order = new Order(product.getQuantity(), product.getName(), product.getPrice());
 		order.setId(++id);
 		

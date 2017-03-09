@@ -1,6 +1,12 @@
 package com.crazybookings.beans;
 
 public class Email {
+
+	private String destiny;
+
+	private String message;
+
+	private String subject;
 	
 	public String getDestiny() {
 		return destiny;
@@ -26,10 +32,5 @@ public class Email {
 		this.subject = subject;
 	}
 
-	private String destiny;
-
-	private String message;
-
-	private String subject;
 
 }

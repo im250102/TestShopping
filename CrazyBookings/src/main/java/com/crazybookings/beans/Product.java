@@ -6,6 +6,12 @@ public class Product {
 	private String name;
 	private int price;
 	private int quantity;
+	private byte[] image;
+		
+	//Spring needs this constructor	
+	public Product() {
+
+	} 
 	
 	public Product(String name, String src, int price, int quantity) {
 	            this.name = name;
@@ -13,10 +19,6 @@ public class Product {
 	            this.quantity = quantity;
 	            this.src = src;
 	}
-	
-    private byte[] image;
-    
-	public Product(){} //Spring needs this constructor
 	
 	public String getSrc() {
 		return src;
@@ -56,7 +58,5 @@ public class Product {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-
-
 
 }

@@ -7,6 +7,15 @@ public class Order {
 	private int price;
 	private String name;
 	
+	//Spring needs this constructor	
+	public Order() { }
+	
+	public Order(int quantity, String name, int price){
+		this.quantity = quantity;
+		this.price = price;
+		this.name = name;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -30,14 +39,6 @@ public class Order {
 		this.price = price;
 	}
 	
-	public Order(int quantity, String name, int price){
-		this.quantity = quantity;
-		this.price = price;
-		this.name = name;
-	}
-	
-    public Order() { }
-    
 	public Long getId() {
 		return id;
 	}

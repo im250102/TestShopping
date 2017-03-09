@@ -16,22 +16,24 @@ import com.crazybookings.mail.service.MailService;
 @RequestMapping("/contact")
 public class ContactController {
     
-	private Logger logger = Logger.getLogger(ContactController.class);
-	
 	@Autowired
     private MailService mailService;
 	
     @RequestMapping("/layout")
     public String getMainPartialPage() {
-        logger.info("This is an info log entry");
-        logger.error("This is an error log entry");
+    	Logger.getLogger(getClass()).info("<CrazyBookings>Inside of Contact Controller<CrazyBookings>");
         return "contact/layout";
     }
     
 	@RequestMapping(value = "/sendEmail", method = RequestMethod.POST)
     public @ResponseBody void addUser(@RequestBody Email email) {
-		mailService.sendMail(email.getDestiny(), email.getSubject(), email.getMessage());
-    }
+    	Logger.getLogger(getClass()).info("<CrazyBookings>Sending email to" + email.getDestiny() +"<CrazyBookings>");
+		
+    	mailService.sendMail(email.getDestiny(), email.getSubject(), email.getMessage());
+
+		Logger.getLogger(getClass()).info("<CrazyBookings>Email sent<CrazyBookings>");
+
+	}
     
 }
 
