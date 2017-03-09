@@ -22,7 +22,7 @@ public class MailService
     	
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(to);
-            message.setSubject("test");
+            message.setSubject(subject);
             message.setText(body);
             mailSender.send(message);
     		

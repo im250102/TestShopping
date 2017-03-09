@@ -14,12 +14,9 @@ var AdminController =  function($scope, $http, fileUpload) {
         var file = $scope.myFile;
         var product = $scope.product;
         var price = $scope.price;
-        console.log('file is ' );
         console.dir(file);
         var uploadUrl = "admin/uploadFile";
-
         fileUpload.uploadFileToUrl(product, price, file, uploadUrl);
-
     };
 
 };

@@ -1027,3 +1027,343 @@ INFO    2017-03-09 12:44:36,106 [http-nio-8080-exec-6] com.crazybookings.control
 INFO    2017-03-09 12:44:38,562 [http-nio-8080-exec-2] com.crazybookings.controller.ProductController  - <CrazyBookings>Add product Mauro to cart <CrazyBookings>
 INFO    2017-03-09 12:44:41,704 [http-nio-8080-exec-3] com.crazybookings.controller.CartController  - <CrazyBookings>Removing order from cart<CrazyBookings>
 INFO    2017-03-09 12:44:41,704 [http-nio-8080-exec-3] com.crazybookings.controller.CartController  - <CrazyBookings>Removed order from cart<CrazyBookings>
+INFO    2017-03-09 12:50:59,321 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.support.XmlWebApplicationContext  - Closing WebApplicationContext for namespace 'crazybookings-servlet': startup date [Thu Mar 09 12:43:46 GMT 2017]; root of context hierarchy
+INFO    2017-03-09 12:50:59,323 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'tutorialPU'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Mauro to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Sending email toignacio.martin1083@gmail.com<CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v1sm8139144wra.65 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.controller.ContactController.addUser(ContactController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:537)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1085)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1556)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1513)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v1sm8139144wra.65 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 43 more
+<CrazyBookings>Email sent<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Sending email toignacio.martin1083@gmail.com<CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials p12sm8266579wrb.46 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.controller.ContactController.addUser(ContactController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:537)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1085)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1556)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1513)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials p12sm8266579wrb.46 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 43 more
+<CrazyBookings>Email sent<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Marc] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Moro to cart <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Marc] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Add user jON <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Sending email toignacio.martin1083@gmail.com<CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q4sm9256878wme.17 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.controller.ContactController.addUser(ContactController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:537)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1085)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1556)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1513)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q4sm9256878wme.17 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 43 more
+<CrazyBookings>Email sent<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Add user Ignacio <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolay] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
