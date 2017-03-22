@@ -19,8 +19,11 @@ public class Usr {
 
     private String email;
    
+    public void setId(Long id){
+    	this.id = id;
+    }
     
-    public long getId() {
+	public long getId() {
         return id;
     }
 
