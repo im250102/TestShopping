@@ -1,7 +1,7 @@
 'use strict';
 
 
-var ProductController = function($scope, $http) {    
+var ProductController = function($scope, $http, ngDialog) {    
     
     $scope.products = [];
     
@@ -28,7 +28,7 @@ var ProductController = function($scope, $http) {
     $scope.addProductToCart = function(product) {
        
        	$http.post("products/addProductToCart", product).success(function(){
-       		alert('product add into cart');	
+            ngDialog.open({ template: 'products/popUpProduct', className: 'ngdialog-theme-default' });
         });  
 
     };

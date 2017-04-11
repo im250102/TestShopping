@@ -1367,3 +1367,805 @@ No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolay
 <CrazyBookings>Removed order from cart<CrazyBookings>
 <CrazyBookings>Inside of Admin Controller<CrazyBookings>
 <CrazyBookings>Retrieve all the products<CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n187sm9259789wmd.4 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n187sm9259789wmd.4 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 34 more
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Mauro to cart <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Moro to cart <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+No mapping found for HTTP request with URI [/CrazyBookings/] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+No mapping found for HTTP request with URI [/CrazyBookings/] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/jON] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+Failed to write HTTP message: org.springframework.http.converter.HttpMessageNotWritableException: Could not write content: (was java.lang.NullPointerException) (through reference chain: java.util.ArrayList[0]->com.crazybookings.persistence.Usr["id"]); nested exception is com.fasterxml.jackson.databind.JsonMappingException: (was java.lang.NullPointerException) (through reference chain: java.util.ArrayList[0]->com.crazybookings.persistence.Usr["id"])
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolay] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolanda] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolanda] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Yolanda] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Marc] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/Ignacio] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/jON] in DispatcherServlet with name 'crazybookings'
+No mapping found for HTTP request with URI [/CrazyBookings/register/delete/jON] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Delete user jON <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Delete user Marc <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Delete user Yolanda <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Delete user Yolay <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/products/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i7sm693895wmg.30 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i7sm693895wmg.30 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 34 more
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/products/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/products/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/products/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Add product Moro to cart <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/popupTmpl.html] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y29sm14627745wmh.3 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y29sm14627745wmh.3 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 34 more
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g63sm22686395wme.11 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g63sm22686395wme.11 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 34 more
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Get product  Beryna by name <CrazyBookings>
+Error sending email 
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 465; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 465; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect; message exception details (1) are:
+Failed message 1:
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 465; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection timed out: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2100)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:699)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2066)
+	... 38 more
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory

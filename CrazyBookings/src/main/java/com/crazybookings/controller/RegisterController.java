@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -44,6 +45,14 @@ public class RegisterController {
     	Logger.getLogger(getClass()).info("<CrazyBookings>Add user "+ user.getName()  + " <CrazyBookings>");
 		
 		registerService.addUser(user);
+    }
+	
+    @RequestMapping(value = "/delete/{name}", method = RequestMethod.DELETE)
+    public @ResponseBody void deleteUser(@PathVariable("name") String name) {
+
+    	Logger.getLogger(getClass()).info("<CrazyBookings>Delete user "+ name  + " <CrazyBookings>");
+
+    	registerService.deleteUser(name);
     }
 
 

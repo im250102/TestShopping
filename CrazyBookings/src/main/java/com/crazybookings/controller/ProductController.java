@@ -37,6 +37,13 @@ public class ProductController {
         return "products/layout";
     }
 
+	
+	@RequestMapping("/popUpProduct")
+    public String getPopAddProduct() {
+		
+        return "products/popUpProduct";
+    }
+	
 	@RequestMapping(value="/getAllProducts", method = RequestMethod.POST)
 	public @ResponseBody String getAllProduct(){
 		

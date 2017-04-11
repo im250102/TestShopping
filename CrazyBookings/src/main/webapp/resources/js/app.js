@@ -3,7 +3,7 @@
 
 var CrazyBookingsApp = {}; 
 
-var CrazyBookingsApp = angular.module('CrazyBookingsApp', ['CrazyBookingsApp.services', 'CrazyBookingsApp.directives']);
+var CrazyBookingsApp = angular.module('CrazyBookingsApp', ['CrazyBookingsApp.services', 'CrazyBookingsApp.directives', 'ngDialog']);
 
 
 // Configuración de las rutas
@@ -34,7 +34,11 @@ CrazyBookingsApp.config(function($routeProvider) {
         	templateUrl : 'contact/layout',
         	controller: ContactController
         })
-       
+
+        .when('/popUpProduct', {        	
+        	templateUrl : 'products/popUpProduct',
+        	controller: ContactController
+        })
         .otherwise({
             redirectTo: '/index'
         });
