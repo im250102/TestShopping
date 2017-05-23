@@ -20,6 +20,7 @@ import com.crazybookings.beans.Products;
 import com.crazybookings.persistence.ProductPersist;
 import com.crazybookings.service.ProductService;
 
+
 @Controller
 @RequestMapping("/products")
 public class ProductController {

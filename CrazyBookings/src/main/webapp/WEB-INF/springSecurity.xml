@@ -4,7 +4,9 @@
  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
  
  <http auto-config="true">
-	 <intercept-url pattern="/" access="hasRole('ADMIN')" />
+	 <intercept-url pattern="/" access="hasRole('ROLE_ADMIN')" />
+	 <csrf disabled="true"/>
+	 <logout invalidate-session="true" delete-cookies="JSESSIONID" logout-success-url="/j_spring_security_logout"  />
  </http>
  
  <authentication-manager>
@@ -14,5 +16,7 @@
 		 </user-service>
  	</authentication-provider>
  </authentication-manager>
+ 
+ 
 
 </bean:beans>

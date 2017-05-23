@@ -1,15 +1,20 @@
 package com.crazybookings.controller;
 
+import java.util.HashMap;
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.crazybookings.beans.Order;
 import com.crazybookings.persistence.Usr;
 import com.crazybookings.service.RegisterService;
 
@@ -46,6 +51,14 @@ public class RegisterController {
 		registerService.addUser(user);
     }
 
+    @RequestMapping(value = "/delete/{name}", method = RequestMethod.DELETE)
+    public @ResponseBody void deleteOrderFromCart(@PathVariable("name") String name) {
+    	
+		Logger.getLogger(getClass()).info("<CrazyBookings>Deleting user<CrazyBookings>");
+    	
+		registerService.deleteUser(name);
+    	
+    }
 
 }
 
