@@ -12,7 +12,7 @@ var ContactController =  function($scope, $http) {
     //Add product into cart
     $scope.sendEmail = function(email) {
     	
-    	$http.post('contact/sendEmail', email).success();  
+    	$http.post('contact/sendEmail', email).then();  
         
     };
        

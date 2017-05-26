@@ -10,7 +10,6 @@ AppServices.service('fileUpload', ['$http', function ($http) {
 	
     this.uploadFileToUrl = function(product, price, file, uploadUrl){
         var fd = new FormData();
-        alert('service fileupload');
         
         fd.append('file', file);
         fd.append('product', product);
@@ -21,12 +20,10 @@ AppServices.service('fileUpload', ['$http', function ($http) {
             transformRequest: angular.identity,
             headers: {'Content-Type': undefined}
         })
-        .success(function(){
+        .then(function(){
         	alert("Success ... " + status);
-        })
-        .error(function(){
-        	alert("Error ... " + status);
         });
+        
     }
 }]);
 

@@ -4,8 +4,8 @@
 var CartController = function($scope, $http) {    
 
     $scope.fetchOrdersList = function() {
-        $http.get('cart/orderList.json').success(function(orderList){
-            $scope.orders = orderList;
+        $http.get('cart/orderList.json').then(function successCallback(response){
+            $scope.orders = response.data;
         });
     };
     
@@ -20,7 +20,7 @@ var CartController = function($scope, $http) {
     }
     
     $scope.deleteOrder = function(id) {
-        $http.delete('cart/delete/' + id).success(function() {
+        $http.delete('cart/delete/' + id).then(function() {
         	$scope.fetchOrdersList();
         });
     };

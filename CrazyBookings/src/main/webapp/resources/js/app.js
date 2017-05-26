@@ -3,7 +3,12 @@
 
 var CrazyBookingsApp = {}; 
 
-var CrazyBookingsApp = angular.module('CrazyBookingsApp', ['CrazyBookingsApp.services', 'CrazyBookingsApp.directives']);
+var CrazyBookingsApp = angular.module('CrazyBookingsApp', ['CrazyBookingsApp.services', 'CrazyBookingsApp.directives', 'ngCookies', 'ngRoute']);
+
+//Due to Angular 1.6.4. require do this in the location Provider
+CrazyBookingsApp.config(['$locationProvider', function($locationProvider) {
+	  $locationProvider.hashPrefix('');
+}]);
 
 
 // Configuración de las rutas

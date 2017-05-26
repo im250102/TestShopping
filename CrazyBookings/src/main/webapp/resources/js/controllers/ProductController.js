@@ -10,11 +10,8 @@ var ProductController = function($scope, $http) {
 	            url: 'products/getAllProducts/',
 	            method: "POST",
 	            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-	     }).success(function (data) {
-			   	var i=0;
-		        for(i=0; i< data.productList.length; i++){
-		        	  $scope.products.push(data.productList[i]);
-		        }
+	     }).then(function successCallback(response) {
+	    		$scope.products = response.data.productList;
 		 }
 	     );       
     }
@@ -27,8 +24,8 @@ var ProductController = function($scope, $http) {
     //Add product into Cart
     $scope.addProductToCart = function(product) {
        
-       	$http.post("products/addProductToCart", product).success(function(){
-       		alert('product add into cart');	
+       	$http.post("products/addProductToCart", product).then(function(){
+       		alert('product added into cart');	
         });  
 
     };
@@ -41,11 +38,8 @@ var ProductController = function($scope, $http) {
             url: 'products/getProductByName/' + searchWine,
             method: "POST",
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-        }).success(function (data) {
-		   	var i=0;
-	        for(i=0; i< data.productList.length; i++){
-	        	  $scope.products.push(data.productList[i]);
-	        }
+        }).then(function (response) {
+        	$scope.products = response.data.productList;
         });     
        	
     };

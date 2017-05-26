@@ -3826,3 +3826,955 @@ HHH000021: Bytecode provider name : javassist
 HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
 HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+Error sending email 
+org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 534-5.7.9 Please log in with your web browser and then try again. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired d74sm237426wmi.3 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:424)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.crazybookings.mail.service.MailService.sendMail(MailService.java:27)
+	at com.crazybookings.mail.service.test.MailServiceTest.sendMailTest(MailServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Please log in with your web browser and then try again. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired d74sm237426wmi.3 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 34 more
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/j_spring_security_logout] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/j_spring_security_logout] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/j_spring_security_logout] in DispatcherServlet with name 'crazybookings'
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+No mapping found for HTTP request with URI [/CrazyBookings/%3Cc:url%20value=] in DispatcherServlet with name 'crazybookings'
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Get product  Beryna by name <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Get product  Emilia by name <CrazyBookings>
+<CrazyBookings>Get product  Emilio Moro by name <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Add user Yolanda <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Deleting user<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Get product  Mauro by name <CrazyBookings>
+<CrazyBookings>Add product Mauro to cart <CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Removing order from cart<CrazyBookings>
+<CrazyBookings>Removed order from cart<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+SQL Error: 1062, SQLState: 23000
+Duplicate entry 'Muga' for key 'UK_2rnh3vm0ymnyusi1qc3b4ue5r'
+HHH000010: On release of batch it still contained JDBC statements
+Failed to upload file org.springframework.orm.jpa.JpaSystemException: org.hibernate.exception.ConstraintViolationException: could not execute statement; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+SQL Error: 1062, SQLState: 23000
+Duplicate entry 'Muga' for key 'UK_2rnh3vm0ymnyusi1qc3b4ue5r'
+HHH000010: On release of batch it still contained JDBC statements
+Failed to upload file org.springframework.orm.jpa.JpaSystemException: org.hibernate.exception.ConstraintViolationException: could not execute statement; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Beryna to cart <CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Add user Yolanda <CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+HHH000204: Processing PersistenceUnitInfo [
+	name: tutorialPU
+	...]
+HHH000412: Hibernate Core {5.1.2.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000397: Using ASTQueryTranslatorFactory
+<CrazyBookings>Main page loaded<CrazyBookings>
+<CrazyBookings>Inside of Product Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Contact Controller<CrazyBookings>
+<CrazyBookings>Sending email toignacio.martin1083@gmail.com<CrazyBookings>
+<CrazyBookings>Email sent<CrazyBookings>
+<CrazyBookings>Inside of Register Controller<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Deleting user<CrazyBookings>
+<CrazyBookings>Retrieve user list <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Inside of Admin Controller<CrazyBookings>
+<CrazyBookings>Inside of Cart Controller<CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
+<CrazyBookings>Add product Emilio Moro to cart <CrazyBookings>
+<CrazyBookings>Retrieve all the products<CrazyBookings>
