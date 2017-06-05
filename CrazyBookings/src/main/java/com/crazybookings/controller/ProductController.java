@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,15 +40,32 @@ public class ProductController {
     }
 
 	@RequestMapping(value="/getAllProducts", method = RequestMethod.POST)
-	public @ResponseBody String getAllProduct(){
+	public @ResponseBody String getAllProduct(@CookieValue(value="Vino", required=false) String selectedWine){
 		
-    	Logger.getLogger(getClass()).info("<CrazyBookings>Retrieve all the products<CrazyBookings>");
+		Collection<ProductPersist> list = null;
 		
 		products = new Products();
-		Collection<ProductPersist> list = productService.getAllProducts();
-		if(list!=null)
-			return products.prepareProductList(list).toString();
+				
+		if(selectedWine !=null){
+			
+			list = productService.getProductsByName(selectedWine.toString().replace("\"", ""));
+			
+			if(list!=null)
+			
+				return products.prepareProductList(list).toString();
+		
+		} else {
+			
+			list = productService.getAllProducts();
+			
+			if(list!=null)
+			
+				return products.prepareProductList(list).toString();
+		} 
+	
 		return null;
+    	
+
 	}
 	
     /*Add product into cart, data in session*/

@@ -1,11 +1,11 @@
 'use strict';
 
 
-var ProductController = function($scope, $http) {    
+var ProductController = function($scope, $http, $cookieStore) {    
     
     $scope.products = [];
     
-    $scope.getAllProducts = function(){    	
+    $scope.getAllProducts = function(searchWine){    	
 	   	 $http({
 	            url: 'products/getAllProducts/',
 	            method: "POST",
@@ -32,7 +32,9 @@ var ProductController = function($scope, $http) {
     
     //Search wine
     $scope.searchWine = function(searchWine) {
-
+    	//Add cookie wine
+    	$cookieStore.put("Vino", searchWine);
+    	
     	$scope.products = [];
         $http({
             url: 'products/getProductByName/' + searchWine,
@@ -43,5 +45,7 @@ var ProductController = function($scope, $http) {
         });     
        	
     };
+    
+    
     
 };
